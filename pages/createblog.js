@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { API_ROOT_URL, VALIDATION_MESSAGE, CREATE_SUCCESS_MESSAGE } from '../utils/constants';
 
-const createblog = () => {
+const Createblog = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
 
@@ -64,4 +64,4 @@ const createblog = () => {
     );
 };
 
-export default createblog;
+export default Createblog;
