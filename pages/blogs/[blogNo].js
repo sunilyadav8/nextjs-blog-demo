@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { API_ROOT_URL, DELETE_SUCCESS_MESSAGE } from '../../utils/constants';
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 
 export const getStaticPaths = async () => {
     const res = await fetch(API_ROOT_URL);
