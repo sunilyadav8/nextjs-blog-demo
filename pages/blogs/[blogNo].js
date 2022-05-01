@@ -32,7 +32,7 @@ export const getStaticProps = async (context) => {
 };
 
 
-const myData = ({ data }) => {
+const Blog = ({ data }) => {
     const router = useRouter()
     const handleDelete = (id) => {
         fetch(`${API_ROOT_URL}/${id}`, { method: 'DELETE' })
@@ -64,4 +64,4 @@ const myData = ({ data }) => {
     );
 };
 
-export default myData;
+export default Blog;
