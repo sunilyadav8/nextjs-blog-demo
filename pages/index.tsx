@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import Header from '../components/Header';
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import type { NextPage } from "next";
+import Header from "../components/Header";
+import styles from "../styles/Home.module.css";
 
-export default function Home({ data }) {
+const Home: NextPage = () => {
   return (
     <div>
       <Head>
@@ -12,8 +13,8 @@ export default function Home({ data }) {
         <meta name="author" content="Sunil Yadav" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0">
-        </meta>
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -27,6 +28,7 @@ export default function Home({ data }) {
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
+export default Home;
